@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Hafalan</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: linear-gradient(#6ec3ff, #23eaff);
+        height: 100vh;
+    }
+
+    .container {
+        position: absolute;
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    .radial-bg {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        background: radial-gradient(125% 125% at 50% 10%,
+                #ffffff 40%,
+                #19a7ff 100%);
+    }
+
+    .content {
+        position: relative;
+        z-index: 1;
+    }
+
+    .navbar {
+        width: 95%;
+        margin: 20px auto;
+        padding: 15px 25px;
+        background: white;
+        border-radius: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .logo {
+        height: 45px;
+    }
+
+    .nav-right {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .nav-right a {
+        transition: all .18s ease;
+        padding: 8px 12px;
+        border-radius: 10px;
+        font-weight: 600;
+        text-decoration: none;
+        color: #000000;
+        font-size: 14px;
+    }
+
+    .nav-right a:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 24px rgba(2, 6, 23, 0.5);
+        transform: scale(1.05);
+        transition: transform 0.5s;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+
+    .user-icon img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .user-icon {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 15px;
+        color: black;
+    }
+
+    .big-box {
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+    }
+
+    .menu-box {
+        width: 520px;
+        background: white;
+        padding: 25px 20px;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+    }
+
+    .menu-box h2 {
+        margin-bottom: 20px;
+    }
+
+    .item {
+        background: #d6d6d6;
+        padding: 15px;
+        border-radius: 12px;
+        margin: 12px 0;
+        font-size: 17px;
+        text-align: left;
+        padding-left: 25px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+    .item:hover {
+        background: #b0b0b0;
+    }
+
+    a .item {
+        text-decoration: none;
+        color: #000000;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="radial-bg"></div>
+        <div class="content">
+            <div class="navbar">
+                <div class="nav-left">
+                    <a href="dashboard.html">
+                        <img src="/asset/Web-Logo.png" class="logo">
+                    </a>
+                </div>
+
+                <div class="nav-right">
+                    <a href="menu-hafalan.html">Menu Hafalan</a>
+                    <a href="tracking-progres.html">Tracking Progres</a>
+                    <a href="#">Laporan</a>
+                    <div class="user-icon">
+                        <span>username</span>
+                        <img src="/asset/download (2).jpeg" class="logo">
+                    </div>
+                </div>
+            </div>
+
+            <div class="big-box">
+                <div class="menu-box">
+                    <h2>Menu Hafalan</h2>
+
+                    <a href="setoran-santri.html">
+                        <div class="item">Setor Hafalan</div>
+                    </a>
+                    <div class="item">Lihat Progres</div>
+                    <div class="item">Laporan</div>
+                    <a href="dashboard.html">
+                        <div class="item">Kembali</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

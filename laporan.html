@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Santri</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: linear-gradient(#63d3ff, #1a9fff);
+        min-height: 100vh;
+    }
+
+    .container {
+        position: absolute;
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    .radial-bg {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        background: radial-gradient(125% 125% at 50% 10%,
+                #ffffff 40%,
+                #19a7ff 100%);
+    }
+
+    .content {
+        position: relative;
+        z-index: 1;
+    }
+
+    .navbar {
+        width: 95%;
+        margin: 20px auto;
+        padding: 15px 25px;
+        background: white;
+        border-radius: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    .nav-menu {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .nav-menu a {
+        transition: all .18s ease;
+        padding: 8px 12px;
+        border-radius: 10px;
+        font-weight: 600;
+        text-decoration: none;
+        color: #000000;
+        font-size: 14px;
+    }
+
+    .nav-menu a:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 24px rgba(2, 6, 23, 0.5);
+        transform: scale(1.05);
+        transition: transform 0.5s;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .user-icon img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .user-icon {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 15px;
+        color: black;
+    }
+
+    .wrapper {
+        width: 100%;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .card {
+        width: 70%;
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.25);
+    }
+
+    .card h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .card p {
+        margin: 5px 0;
+        font-size: 15px;
+    }
+
+    .download {
+        margin-top: 15px;
+        padding: 10px 15px;
+        background: #d6d6d6;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .download:hover {
+        background: #bcbcbc;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="radial-bg"></div>
+        <div class="content">
+            <div class="navbar">
+                <a href="dashboard.html">
+                    <img class="logo" src="/asset/Web-Logo.png" alt="LOGO">
+                </a>
+
+                <div class="nav-menu">
+                    <a href="menu-hafalan.html">Menu Hafalan</a>
+                    <a href="tracking-progres.html">Tracking Progres</a>
+                    <a href="laporan.html">Laporan</a>
+                    <div class="user-icon">
+                        <span>username</span>
+                        <img src="/asset/download (2).jpeg" class="logo">
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper">
+
+                <div class="card">
+                    <h2>Laporan Santri</h2>
+                    <p>Nama Santri : Jabir</p>
+                    <p>Kelas : x</p>
+                    <p>Juz Selesai : 29 Juz</p>
+                    <p>Rata rata Nilai : 99/100</p>
+
+                    <button class="download">Download Laporan (Statik)</button>
+                </div>
+
+                <div class="card">
+                    <h2>Laporan Santri</h2>
+                    <p>Nama Santri : Jundi</p>
+                    <p>Kelas : x</p>
+                    <p>Juz Selesai : 30 Juz</p>
+                    <p>Rata rata Nilai : 100/100</p>
+
+                    <button class="download">Download Laporan (Statik)</button>
+                </div>
+
+                <div class="card">
+                    <h2>Laporan Santri</h2>
+                    <p>Nama Santri : Fadily</p>
+                    <p>Kelas : x</p>
+                    <p>Juz Selesai : 25 Juz</p>
+                    <p>Rata rata Nilai : 99999/100</p>
+
+                    <button class="download">Download Laporan (Statik)</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
